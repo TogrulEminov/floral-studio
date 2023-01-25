@@ -1,26 +1,33 @@
-.allNavbar{
+.allNavbar {
     width: 100%;
-
+    z-index: 100;
     position: relative;
     padding: 20px 0 !important;
     background-color: #236e5a;
     opacity: .8;
-    .row{
+
+    .row {
         align-items: center;
         justify-content: center;
-        .navbarRight{
+
+        .navbarRight {
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            .search{
+
+            .search {
                 position: relative;
-                svg{
+
+                svg {
                     font-size: 30px;
                     cursor: pointer;
                     color: #d8e3d5;
                 }
-                form{
-                    display:block;
+
+                form {
+                    opacity: 1;
+
+                    display: block;
                     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
                     position: absolute;
                     background-color: #d8e3d5;
@@ -28,49 +35,58 @@
                     padding: 10px !important;
                     right: 10px;
                     top: 50px;
-                    input{
+
+                    input {
                         border: 1px solid #236e5a;
                         outline: none;
-                        padding: 2px 6px!important;
+                        padding: 2px 6px !important;
                         color: #236e5a;
-                        &::placeholder{
+
+                        &::placeholder {
                             color: #236e5a;
                         }
                     }
                 }
             }
-            .navbarLinks{
+
+            .navbarLinks {
                 display: flex;
                 align-items: center;
-                li{
+
+                li {
                     margin-left: 40px !important;
-                    a{
+
+                    a {
                         color: #d8e3d5;
                         font-size: 20px;
                         transition: .5s;
                         padding-left: 10px !important;
-                        &:hover{
+
+                        &:hover {
                             color: yellow;
-                        }   
+                        }
                     }
                 }
             }
-            .hamburger{
+
+            .hamburger {
                 padding-left: 10px !important;
                 cursor: pointer;
                 display: none;
-            div{
-                width: 30px;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid #6a7c77;
-                svg{
-                    color: #d8e3d5;
+
+                div {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #6a7c77;
+
+                    svg {
+                        color: #d8e3d5;
+                    }
                 }
             }
         }
-    }
     }
 }

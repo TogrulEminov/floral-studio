@@ -31,7 +31,7 @@ function Context({ children }) {
     const searchData = (e) => {
         setSearch(e.target.value)
     }
-    const url = "http://localhost:8080/flowers"
+    const url = `http://localhost:8080/flowers${search}`
     const getData = async () => {
         const response = await axios.get(url)
         setData(response.data)
@@ -49,7 +49,7 @@ function Context({ children }) {
 
 
     const postData = () => {
-        if (!input.name || !input.price || input.url) return
+        if (input.name.trim()=="" || input.price.trim()=="" || input.url.trim()=="") return
         axios.post("http://localhost:8080/flowers", input)
         setInput({
             name: "",
@@ -58,6 +58,10 @@ function Context({ children }) {
         })
         getData()
     }
+
+    console.log(postData);
+
+
     console.log(data);
     const deleteData = (index) => {
         axios.delete(`http://localhost:8080/flowers/${index}`)
