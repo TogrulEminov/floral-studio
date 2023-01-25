@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className='search'>
               <AiOutlineSearch onClick={openInput} />
               <form style={open ? { display: "block"} : { display: "none"}}>
-                <input type="text" onChange={searchData} value={search} placeholder="search" />
+                <input type="text"  value={search} placeholder="search" onChange={searchData} />
               </form>
             </div>
             <ul className='navbarLinks'>

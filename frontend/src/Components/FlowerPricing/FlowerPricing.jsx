@@ -16,7 +16,7 @@ const FlowerPricing = () => {
                 <div className="row">
                     {data && data
                         .filter((product) => (
-                            search.trim().toUpperCase() ? product : product.name.toLowerCase().includes(search.toLowerCase())
+                            search.trim().toUpperCase()=="" ? product : product.name.toLowerCase().includes(search.toLowerCase())
                         ))
                         .map((e, index) => (
                             <div className="col-3 card" key={index}>
