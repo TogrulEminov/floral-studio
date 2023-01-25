@@ -1,0 +1,41 @@
+.header{
+  .swiper-pagination-bullet{
+    width: 10px;
+    height: 10px;
+    margin: 0 5px !important;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #2f767a;
+  }
+  .swiper-button-prev{
+   color: #2f767a;
+  }
+  .swiper-button-next{
+    color: #2f767a;
+  }
+    .swp-2{
+        background: url("../../media/bgSlide2.jpg") !important;
+    }
+    .swp-3{
+        background: url("../../media/bgSlide3.jpg") !important;
+    }
+    .swp-1{
+        background: url("../../media/bgSlide1.jpg") center/cover;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .swp-content{
+            text-align: center;
+            h3{
+                font-size: 20px;
+                color: #2f767a;
+            }
+            h1{
+                font-size: 35px;
+                font-weight: 600;
+                color: #2f767a;
+            }
+        }
+    }
+}

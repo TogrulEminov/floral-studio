@@ -1,0 +1,74 @@
+.allNavbar{
+    width: 100%;
+    padding: 20px 0 !important;
+    background-color: #236e5a;
+    opacity: .8;
+    .row{
+        align-items: center;
+        justify-content: center;
+        .navbarRight{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .search{
+                position: relative;
+                svg{
+                    font-size: 30px;
+                    cursor: pointer;
+                    color: #d8e3d5;
+                }
+                form{
+                    display:block;
+                    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                    position: absolute;
+                    background-color: #d8e3d5;
+                    width: 200px;
+                    padding: 10px !important;
+                    right: 10px;
+                    top: 50px;
+                    input{
+                        border: 1px solid #236e5a;
+                        outline: none;
+                        padding: 2px 6px!important;
+                        color: #236e5a;
+                        &::placeholder{
+                            color: #236e5a;
+                        }
+                    }
+                }
+            }
+            .navbarLinks{
+                display: flex;
+                align-items: center;
+                li{
+                    margin-left: 40px !important;
+                    a{
+                        color: #d8e3d5;
+                        font-size: 20px;
+                        transition: .5s;
+                        padding-left: 10px !important;
+                        &:hover{
+                            color: yellow;
+                        }   
+                    }
+                }
+            }
+            .hamburger{
+                padding-left: 10px !important;
+                cursor: pointer;
+                display: none;
+            div{
+                width: 30px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid #6a7c77;
+                svg{
+                    color: #d8e3d5;
+                }
+            }
+        }
+    }
+    }
+}
