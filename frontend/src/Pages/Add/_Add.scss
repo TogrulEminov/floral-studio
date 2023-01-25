@@ -1,0 +1,46 @@
+.addForm{
+padding: 40px 0 !important;
+min-height: 640px;
+display: flex;
+align-items: center;
+justify-content: center;
+    .row{
+        justify-content: center;
+        align-items: center;
+        .allAdd{
+            padding: 20px !important;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            .inputForm{
+                div{
+                    // color: #3e755e;
+                    color: #236e5b;
+                    font-weight: 600;
+                    font-size: 25px;
+                    padding-bottom: 6px !important;
+                }
+                input{
+                    width: 100%;
+                    padding: 10px !important;
+                    border: 1px solid #236e5b;
+                    outline: none;
+
+                }
+                p{
+                    padding: 6px 0 !important;
+                    font-size: 18px;
+                    color: red;
+                }
+            }
+            button{
+                padding: 10px 40px !important;
+                cursor: pointer;
+                background-color: #236e5b;
+                color: #fff;
+                border-radius: 20px;
+                margin: 15px 0 !important;
+                border: none;
+            }
+        }
+    }
+}

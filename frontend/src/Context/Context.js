@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import axios from "axios"
 export const mainContext = createContext(null)
 function Context({ children }) {
@@ -27,6 +27,7 @@ function Context({ children }) {
         })
         setData(dataCopy)
     }
+
     const searchData = (e) => {
         setSearch(e.target.value)
     }
@@ -35,15 +36,21 @@ function Context({ children }) {
         const response = await axios.get(url)
         setData(response.data)
     }
+    useEffect(() => {
+        getData()
+    }, [])
 
     const changeInput = (e) => {
         setInput({
             ...input, [e.target.name]: e.target.value
         })
     }
+    console.log(input);
+
+
     const postData = () => {
         if (!input.name || !input.price || input.url) return
-        axios.post(url, input)
+        axios.post("http://localhost:8080/flowers", input)
         setInput({
             name: "",
             price: "",
@@ -51,13 +58,14 @@ function Context({ children }) {
         })
         getData()
     }
+    console.log(data);
     const deleteData = (index) => {
         axios.delete(`http://localhost:8080/flowers/${index}`)
         getData()
     }
 
     const values = {
-        data, setData, input, setInput, deleteData, postData, changeInput, searchData, open, openInput, sortData,search
+        data, setData, input, setInput, deleteData, postData, changeInput, searchData, open, openInput, sortData, search
     }
 
     return (

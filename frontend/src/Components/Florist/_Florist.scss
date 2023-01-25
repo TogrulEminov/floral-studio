@@ -1,0 +1,46 @@
+.floritstSection{
+    padding: 90px 0 !important;
+    .row{
+    align-items: center;
+    justify-content: space-between;
+    .floristLeft{
+        h1{
+            width: 35%;
+            font-size: 40px;
+            color: #0c5b4d;
+            line-height: 60px;
+            font-weight: 500;
+        }
+        p{
+            width: 50%;
+            font-size: 20px;
+            color: #48616f;
+            line-height: 30px;
+            padding: 10px 0!important;
+        }
+        span{
+            font-size: 18px;
+            color: #0c5b4d;
+        }
+        h3{
+            padding: 10px 0 !important;
+            font-size: 35px;
+            font-family: 'Quicksand', sans-serif !important;
+            color: #0c5b4d;
+            font-style: italic;
+        }
+    }
+    .floristRight{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+       
+        .img-2{
+            position: absolute;
+            left: -80px;
+            top: 40px;
+        }
+    }
+    }
+}

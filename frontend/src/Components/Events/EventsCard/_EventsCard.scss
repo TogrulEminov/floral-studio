@@ -1,0 +1,43 @@
+.eventCard {
+    padding: 20px 0 !important;
+.row{
+    align-items: center;
+    justify-content: space-between;
+    .card {
+        background-color: #fef1e6;
+        text-align: center;
+        border: 1px solid #1b745e;
+        min-height: 300px;
+        h1 {
+            padding: 20px 0 !important;
+            font-style: italic;
+            font-size: 40px;
+            color: #83aa99;
+            span{
+                font-size: 28px !important;
+            }
+        }
+        h3{
+            font-size: 26px;
+            color: #1b745e;
+            padding-bottom: 20px !important;
+        }
+        p{
+            width: 60%;
+            font-size: 20px;
+            margin: 0 auto !important;
+            color: #83aa99;
+        }
+       .cardBtn{
+        padding: 20px 0 !important;
+        button{
+            padding: 10px 30px !important;
+            border: none;
+            cursor: pointer;
+            background-color: #d8e3d5;
+            color: #1b745e;
+        }
+       }
+    }
+}
+}

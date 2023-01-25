@@ -1,0 +1,31 @@
+.ourCard{
+    padding: 40px 0  !important;
+    .row{
+        justify-content: center;
+        align-items: center;
+        .card{
+            text-align: center;
+            border: none;
+            .cardImage{
+                width: 100%;
+                height: 400px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h3{
+                padding: 20px 0 !important;
+                font-size: 25px;
+                color: #5c8888;
+                font-weight: 600;
+            }
+            p{
+                color: #85bbbe;
+                font-size: 20px;
+                padding-bottom: 10px !important;
+                
+        }
+    }
+}
+}

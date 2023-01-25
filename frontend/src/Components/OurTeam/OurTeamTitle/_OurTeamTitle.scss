@@ -1,0 +1,19 @@
+.ourTitle{
+    padding: 20px  0 !important;
+    .row{
+        justify-content: center;
+        .ourTitleContent{
+            text-align: center;
+            h3{
+                font-size: 20px;
+                color: #638d7e;
+            }
+            h1{
+                font-size: 40px;
+                font-weight: 600;
+                color: #609486;
+                padding: 20px 0 !important;
+            }
+        }
+    }
+}

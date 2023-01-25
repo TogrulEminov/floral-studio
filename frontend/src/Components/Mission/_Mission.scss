@@ -1,0 +1,44 @@
+.missionSection{
+    background: url("../../media/background2.jpg") center/cover;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .row{
+        align-items: center;
+        justify-content: center;
+        .missionLeft{
+            
+            height: 500px;
+            background-color: #1b745e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .missionContent{
+                width: 50%;
+                h3{
+                    font-size: 40px;
+                    color: #f3f7f6;
+                }
+                p{
+                    width: 60%;
+                    margin: 40px 0!important;
+                    color: #f3f7f6;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                button{
+                    background-color:#d8e3d5;
+                    color: #054635;
+                    cursor: pointer;
+                    border: none;
+                    padding: 10px 30px !important;
+                }
+            }
+        }
+        .missionRight{
+            position: relative;
+            left: -15px;
+        }
+    }
+}
